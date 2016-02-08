@@ -39,7 +39,7 @@ class User {
 
     }
 
-    Boolean encyryptPassword(String pwd) {
+    String encyryptPassword(String pwd) {
         String encryptedPassword
         if (this.isValidPassword(pwd)) {
             encryptedPassword = passwordEncrypterService.encrypt(pwd)
